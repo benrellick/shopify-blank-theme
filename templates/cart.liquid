@@ -1,0 +1,15 @@
+<h1>Your Cart</h1>
+<form action="/cart" method="post">
+  <ul>
+    {% for item in cart.items %}
+    <li>
+      {{ item.quantity }} x {{ item.title }} - {{ item.price | money }}
+      <input type="number" name="updates[{{ item.id }}]" value="{{ item.quantity }}" min="0">
+    </li>
+    {% endfor %}
+  </ul>
+  <button type="submit">Update Cart</button>
+</form>
+<p>Total: {{ cart.total_price | money }}</p>
+<a href="/checkout">Proceed to Checkout</a>
+{% include 'simple-snippet' %}

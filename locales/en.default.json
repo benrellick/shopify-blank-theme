@@ -1,0 +1,16 @@
+{
+  "general": {
+    "accessibility": {
+      "skip_to_content": "Skip to content",
+      "close_modal": "Close modal"
+    },
+    "meta": {
+      "tags": "Tags",
+      "view": "View"
+    },
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next"
+    }
+  }
+}
